@@ -4,9 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Form Using Flexbox</title>
+    <script src="https://kit.fontawesome.com/b1388c1a56.js" crossorigin="anonymous"></script>
+    
+
+    <style>
+        .login-container{
+            display: flex;
+            justify-content: center;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+        }
+        .login-form input,button{
+            font-size: 1.4em;
+            margin-top: 20px;
+            border:1px solid lightblue;
+            padding-left: 10px;
+        }
+        .login-form button{
+            background-color: blueviolet;
+            color: whitesmoke;
+            font-weight: 700;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            margin-right: 15px;
+            font-size: 1.5em;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <span>
+                <a href="">Home</a>
+                <a href="">Products</a>
+                <a href="">Orders</a>
+                <a href="">About Us</a>
+            </span>
+            
+            <span>
+                <a href=""><i class="fas fa-user"></i></a>
+                <a href=""><i class="fas fa-out-alt"></i></a>
+            </span>
+            
+
+        </nav>
+    </header>
+    <section class="login-container">
+        <form action="" class="login-form">
+            <h2>Login</h2>
+            <input type="email" name="email" placeholder="Your Email" id="">
+            <input type="password" name="" placeholder="Your Password" id="">
+            <button type="submit">Login</button>
+        </form>
+    </section>
 </body>
 </html>
